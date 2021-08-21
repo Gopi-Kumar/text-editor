@@ -4,57 +4,86 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
+        <!-- <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
             crossorigin="anonymous"
-        />
+        /> -->
         <link rel="stylesheet" href="style.css" />
-        <title>Doc Editor</title>
+        <title>Text Editor</title>
     </head>
     <body>
         <div class="container">
-            <h4 id="title">Doc Editor</h4>
-            <div class="controls">
-                <div class="main-controls">
-                    <div class="dropdown">
-                        <button
-                            class="btn btn-primary dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                        >
-                            File
+            <div class="header">
+                <!-- <h4 id="title">Text Editor</h4> -->
+                <div class="dropdown">
+                    <button
+                        class="btn btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                    >
+                        File
+                    </button>
+                    <div class="dropdown_menu">
+                        <button id="new-btn" class="dropdown-item">
+                            New
                         </button>
-                        <div class="dropdown-menu">
-                            <button id="new-btn" class="dropdown-item">
-                                New
-                            </button>
-                            <button id="txt-btn" class="dropdown-item">
-                                Save as TXT
-                            </button>
-                            <button id="pdf-btn" class="dropdown-item">
-                                Save as PDF
-                            </button>
-                        </div>
+                        <button id="txt-btn" class="dropdown-item">
+                            Save as TXT
+                        </button>
+                        <button id="pdf-btn" class="dropdown-item">
+                            Save as PDF
+                        </button>
                     </div>
-
-                    <input id="filename-input" type="text" value="untitled" />
                 </div>
-                <div class="control-btn-container">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                    >
+                        About
+                    </button>
+                    <div class="dropdown_menu">
+                        <button id="new-btn" class="dropdown-item">
+                            New
+                        </button>
+                        <button id="txt-btn" class="dropdown-item">
+                            Save as TXT
+                        </button>
+                        <button id="pdf-btn" class="dropdown-item">
+                            Save as PDF
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="controls">
+                <div class="font_controls_container">
+                    <select name="font_family" id="font_family">
+                        <option value="arial">Arial</option>
+                    </select>
+                    <select name="font_size" id="font-size">
+                        <option value="1">23</option>
+                    </select>
+
+                </div>
+                <div class="text_style_controls_container">
                     <button id="bold-btn" class="btn btn-dark control-btn">
-                        B
+                        <b>B</b>
                     </button>
                     <button id="underline-btn" class="btn btn-dark control-btn">
-                        u
+                        <u>U</u>
                     </button>
                     <button id="italic-btn" class="btn btn-dark control-btn">
-                        i
+                        <i>I</i>
                     </button>
                     <input id="color-btn" type="color" class="control-btn" />
                 </div>
             </div>
-
-            <div id="content" contenteditable="true" spellcheck="false"></div>
+            <div class="content_container">
+                <div id="content" contenteditable="true" spellcheck="false"></div>
+            </div>
+            
         </div>
       
         <script src="htmltopdf.js"></script>

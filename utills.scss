@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;600;700;900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+@mixin display_center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin display_as_column(){
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin display_as_column_center(){
+    @include display_as_column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display_as_row(){
+    display: flex;
+    flex-direction: row;
+}
+@mixin display_as_row_end {
+    @include display_as_row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin display_as_row_center(){
+    @include display_as_row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display_as_row_space_between(){
+    @include display_as_row;
+    justify-content: space-between;
+    align-items: center;
+}
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
+  
+// /* Track */
+// ::-webkit-scrollbar-track {
+// box-shadow: inset 0 0 1px gray; 
+// }
+   
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: $black; 
+//     border-radius: 10px;
+//   }
+
+//   .notifications{
+//     position: absolute;
+//     top:20px;
+//     right:20px;
+//     .notification{
+//         // position: absolute;
+//         width:200px;
+//         height: 80px;
+//         padding:10px;
+//         border-radius: 10px;
+//         font-size: 12px;
+//         background:$red;
+//         color:$white;
+//         @include display_as_row_space_between;
+//         button{
+//             border: 0;
+//             outline:0;
+//             cursor: pointer;
+//             padding:5px;
+//             background-color: $white !important;
+//             color:black !important; 
+//         }
+          
+//       }
+//   }
+  
+
+//   .processing_screen{
+//       @include display_as_column_center;
+//       display:none;
+//       position: absolute;
+//       top: 0;
+//       left:0;
+//       width:100%;
+//       height:100%;
+//       background: $apple-blue;
+//       color:$black;
+//       opacity: 0.9;
+//     .processing_circle{
+
+//         border-top: 6px solid black;
+//         border-bottom: 6px solid $white;
+//         border-left: 6px solid $white;
+//         border-right: 6px solid $white;
+//         width:50px;
+//         height:50px;
+//         border-radius: 50%;
+//         animation: animate 0.6s infinite ease-in-out;
+//         box-shadow: 1px 1px 1px 1px $black;
+//     }
+//     .processing_text{
+//         margin: 15px;
+//         color:$white;
+//         font-weight: bold;
+//     }
+//     @keyframes animate {
+//         0% { transform: rotate(0deg); }
+//         100% { transform: rotate(360deg); }
+//     }
+//   }
