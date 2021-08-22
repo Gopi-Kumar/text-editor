@@ -4,12 +4,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-            crossorigin="anonymous"
-        /> -->
         <link rel="stylesheet" href="style.css" />
         <title>Text Editor</title>
     </head>
@@ -18,20 +12,17 @@
             <div class="header">
                 <!-- <h4 id="title">Text Editor</h4> -->
                 <div class="dropdown">
-                    <button
-                        class="btn btn-primary dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                    >
+                    <button>
                         File
                     </button>
                     <div class="dropdown_menu">
-                        <button id="new-btn" class="dropdown-item">
+                        <button id="txt-btn" class="dropdown-item" onclick="newFile()">
                             New
                         </button>
-                        <button id="txt-btn" class="dropdown-item">
+                        <button id="txt-btn" class="dropdown-item" onclick="saveAsText()">
                             Save as TXT
                         </button>
-                        <button id="pdf-btn" class="dropdown-item">
+                        <button id="pdf-btn" class="dropdown-item" onclick="saveAsPdf()">
                             Save as PDF
                         </button>
                     </div>
@@ -44,27 +35,30 @@
                         About
                     </button>
                     <div class="dropdown_menu">
-                        <button id="new-btn" class="dropdown-item">
-                            New
-                        </button>
-                        <button id="txt-btn" class="dropdown-item">
-                            Save as TXT
-                        </button>
-                        <button id="pdf-btn" class="dropdown-item">
-                            Save as PDF
-                        </button>
+                       <button>Source Code</button>
+                       <button>About Developer</button>
                     </div>
                 </div>
 
             </div>
             <div class="controls">
                 <div class="font_controls_container">
-                    <select name="font_family" id="font_family">
-                        <option value="arial">Arial</option>
+                    <select name="font_family" id="font_family" onchange="changeFont(this.value)">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana ">Verdana </option>
+                        <option value="Helvetica ">Helvetica </option>
+                        <option value="Tahoma ">Tahoma </option>
+                        <option value="Trebuchet MS">Trebuchet MS</option>
+                        <option value="Times New Roman">Times New Roman </option>
+                        <option value="Georgia ">Georgia </option>
+                        <option value="Garamond ">Garamond  </option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
                     </select>
-                    <select name="font_size" id="font-size">
-                        <option value="1">23</option>
-                    </select>
+                  <div class="font_size_input">
+                        <input onchange="changeFontSize(this.value)" type="number" value="15" id="font_size">
+                        <p>px</p>
+                  </div>
 
                 </div>
                 <div class="text_style_controls_container">
