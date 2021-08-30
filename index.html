@@ -9,6 +9,10 @@
     </head>
     <body>
         <div class="container">
+            <div class="document_name">
+                <p id="document_name" contenteditable="true">Untitled</p>
+                <span>(Click on name to rename)</span>
+            </div>
             <div class="header">
                 <!-- <h4 id="title">Text Editor</h4> -->
                 <div class="dropdown">
@@ -16,14 +20,17 @@
                         File
                     </button>
                     <div class="dropdown_menu">
-                        <button id="txt-btn" class="dropdown-item" onclick="newFile()">
-                            New
+                        <button class="dropdown-item" onclick="newFile()">
+                            Create new file
                         </button>
-                        <button id="txt-btn" class="dropdown-item" onclick="saveAsText()">
-                            Save as TXT
+                        <button class="dropdown-item" onclick="openFile()">
+                            Open file
                         </button>
-                        <button id="pdf-btn" class="dropdown-item" onclick="saveAsPdf()">
-                            Save as PDF
+                        <button class="dropdown-item" onclick="saveAsText()">
+                            Save as text file
+                        </button>
+                        <button class="dropdown-item" onclick="saveAsPdf()">
+                            Save as pdf file
                         </button>
                     </div>
                 </div>

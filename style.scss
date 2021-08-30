@@ -2,8 +2,26 @@
 
 body{
     // overflow:hidden;
+    font-family: 'Arial';
     .container{
         @include display_as_column();
+        .document_name{
+            padding:5px 10px;
+            @include display_as_row();
+            align-items: center;
+            span{
+                color:gray;
+                font-size:10px;
+                padding:3px;
+            }
+            p{
+                outline:none;
+                padding:3px 5px;
+                &:hover{
+                    background:rgb(189, 189, 189);
+                }
+            }
+        }
         .header{
             font-family: 'Heebo', sans-serif;
             width:100vw;
@@ -14,7 +32,6 @@ body{
                 button{
                     border:none;
                     outline:none;
-                    // background:white;
                     padding:0px 10px;
                     cursor:pointer;
                     &:hover{
@@ -32,6 +49,7 @@ body{
                         font-family: 'Heebo', sans-serif;
                         background:white;
                         text-align: left;
+                        // padding:2px 6px;
                         &:hover{
                             background:rgb(209, 209, 209);
                         }
@@ -85,16 +103,16 @@ body{
         .content_container{
             width:100vw;
             background:rgb(240, 240, 240);
-            padding:10px;
-            height:100vh;
+            padding-top:5px;
+            height:100%;
             #content{
                 background:white;
-                margin:0px auto;
-                width:90vw;
+                padding:5px;
+                width:100vw;
                 height:80vh;
                 // min-width: 300px;
                 // min-height:500px;
-                box-shadow: 5px 5px 10px gray;
+                // box-shadow: 5px 5px 10px gray;
                 outline:none;
                 font-size:15px;
             }

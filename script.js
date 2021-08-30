@@ -3,9 +3,6 @@ const underlineBtn = document.querySelector("#underline-btn")
 const italicBtn = document.querySelector("#italic-btn")
 const colorBtn = document.querySelector("#color-btn")
 
-// const newBtn = document.querySelector("#new-btn")
-// const txtBtn = document.querySelector("#txt-btn")
-// const pdfBtn = document.querySelector("#pdf-btn")
 
 
 const content = document.querySelector("#content")
@@ -31,9 +28,8 @@ function newFile(){
 }
 
 let fileName;
-
 function saveAsText(){
-    fileName = prompt("Ener your file name");
+    fileName = document.getElementById("document_name").innerText;
     const a = document.createElement("a")
     const blob = new Blob([content.innerText])
     const dataUrl = URL.createObjectURL(blob)
