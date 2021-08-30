@@ -26,24 +26,6 @@ colorBtn.addEventListener("input", () => {
     document.execCommand("forecolor", false, colorBtn.value)
 })
 
-// newBtn.addEventListener("click", () => {
-//     content.innerHTML = ""
-// })
-
-
-// txtBtn.addEventListener("click", () => {
-//     const a = document.createElement("a")
-//     const blob = new Blob([content.innerText])
-//     const dataUrl = URL.createObjectURL(blob)
-//     a.href = dataUrl
-//     a.download = filename.value + ".txt"
-//     a.click()
-// })
-
-// pdfBtn.addEventListener('click', () => {
-//     html2pdf().from(content).save(filename.value)
-// })
-
 function newFile(){
     content.innerHTML = ""
 }
