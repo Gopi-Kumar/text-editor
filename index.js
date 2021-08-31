@@ -1,12 +1,14 @@
 const express = require('express')
 const app = express()
-const port = 5000
+
 const path = require('path');
 const bodyParser = require('body-parser');
 const formidable = require("formidable")
 const multer = require('multer');
 const fs = require('fs');
 require('dotenv').config();
+
+const port = process.env.PORT || 5000
 var storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, './uploads');
