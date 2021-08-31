@@ -45,14 +45,19 @@ body{
                     @include display_as_column();
                     position:absolute;
                     display: none;
-                    button{
+                    button,label{
+                        cursor:pointer;
                         font-family: 'Heebo', sans-serif;
                         background:white;
                         text-align: left;
-                        // padding:2px 6px;
+                        font-size: 13px;
+                        padding:3px 10px;
                         &:hover{
                             background:rgb(209, 209, 209);
                         }
+                    }
+                    input{
+                        display: none;
                     }
                 }
                 &:hover > .dropdown_menu{
@@ -64,6 +69,7 @@ body{
             padding:0px 10px;
             width:100vw;
             @include display_as_row();
+            flex-wrap:wrap;
             .font_controls_container{
                 font-family: 'Heebo', sans-serif;
                 @include display_as_row_center();

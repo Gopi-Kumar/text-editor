@@ -57,13 +57,19 @@ body .container .header .dropdown .dropdown_menu {
   position: absolute;
   display: none;
 }
-body .container .header .dropdown .dropdown_menu button {
+body .container .header .dropdown .dropdown_menu button, body .container .header .dropdown .dropdown_menu label {
+  cursor: pointer;
   font-family: "Heebo", sans-serif;
   background: white;
   text-align: left;
+  font-size: 13px;
+  padding: 3px 10px;
 }
-body .container .header .dropdown .dropdown_menu button:hover {
+body .container .header .dropdown .dropdown_menu button:hover, body .container .header .dropdown .dropdown_menu label:hover {
   background: #d1d1d1;
+}
+body .container .header .dropdown .dropdown_menu input {
+  display: none;
 }
 body .container .header .dropdown:hover > .dropdown_menu {
   display: flex;
@@ -73,6 +79,7 @@ body .container .controls {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 body .container .controls .font_controls_container {
   font-family: "Heebo", sans-serif;

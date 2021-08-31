@@ -1,0 +1,107 @@
+//Bit Manupulation rules
+tum mere asmaan mere jamee ban gye gho==
+***** Relation between x and x - 1 
+	->if x- 1 is even 
+	then 
+			x & x - 1 =  x-1, 
+			x | x - 1 = x,  
+			x ^ x - 1 = 1
+
+	->if x is the exponential of 2
+	then
+			x & x - 1 = 0
+			x | x - 1 = x + (x - 1)
+			x ^ x - 1 = x + (x - 1)
+
+
+***** Relation between x and x^2
+	
+		x & x^2 = 0;
+		x | x^2 = x + x^2
+		x ^ x^2 = x + x^2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Computer Networks
+
+There are two possible types of connections: 
+
+Point-to-Point Connection
+Multipoint Connection
+
+Spatial Sharing: If several devices can share the link simultaneously, its
+		 called Spatially shared line configuration. 
+
+Temporal (Time) Sharing: If users must take turns using the link , then its
+		 called Temporally shared or Time Shared Line configuration. 
+
+A transmission medium is a physical path between the transmitter and the receiver 
+i.e it is the channel through which data is sent from one place to another. Transmission 
+Media is broadly classified into the following types: 
+
+Guided Media(Wire transmission media)
+	->Twisted Pair Cable
+		->Unshielded Twisted Pair(UTP)
+			Advantages: 
+				⇢ Least expensive
+				⇢ Easy to install
+				⇢ High-speed capacity
+				⇢ Susceptible to external interference
+				⇢ Lower capacity and performance in comparison to STP
+				⇢ Short distance transmission due to attenuation
+		->Shielded Twisted Pair(STP)
+			Advantages: 
+				⇢ Better performance at a higher data rate in comparison to UTP
+				⇢ Eliminates crosstalk
+				⇢ Comparatively faster
+				⇢ Comparatively difficult to install and manufacture
+				⇢ More expensive
+				⇢ Bulky
+	->Coaxial Cable
+		Advantages: 
+			High Bandwidth
+			Better noise Immunity
+			Easy to install and expand
+			Inexpensive
+	->Optical Fibre Cable
+		Advantages:  
+			Increased capacity and bandwidth
+			Lightweight
+			Less signal attenuation
+			Immunity to electromagnetic interference
+			Resistance to corrosive materials
+		Disadvantages:  
+			Difficult to install and maintain
+			High cost
+			Fragile
+	->Stripline cable
+	->Microstripline cable
+Unguided Media(Wireless Or Unbounded transmission media)
+ Features:  
+	The signal is broadcasted through air
+	Less Secure
+	Used for larger distances
+There are 3 types of Signals transmitted through unguided media: 
+(i)Radiowaves
+(ii)Microwaves
+(iii) Infrared 
+
+
+
+//Operating system
+
+
+//DBMS
